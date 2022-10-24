@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +35,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* import fonts  */
+@font-face {
+  font-family: 'Ogg';
+  src: url(./fonts/ogg/Ogg-Bold.woff) format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(./fonts/ogg/Ogg-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(./fonts/ogg/OggText-Medium.woff) format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url(./fonts/productSans/Product\ Sans\ Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url(./fonts/productSans/Product\ Sans\ Bold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+body {
+  font-family: 'Ogg';
 }
