@@ -5,6 +5,7 @@ section#hero {
 
 /* navBar css  */
 nav {
+	box-sizing: border-box;
 	background-color: #262626;
 	height: 3.4rem;
 	display: flex;
@@ -12,8 +13,13 @@ nav {
 	align-items: center;
 }
 
+.toggle-button {
+	display: none;
+}
+
 .navbarBrand {
 	/* width: 10rem; */
+	margin-top: 5px;
 	height: 2rem;
 	justify-content: center;
 	margin-left: 3rem;
@@ -21,30 +27,127 @@ nav {
 
 .navbarEl {
 	justify-content: start;
-	width: 58%;
+	width: 55%;
 }
 
-.navbarEL > .nav-Links {
-	max-width: 15rem;
+.navbarEL > ul.nav-Links {
 	justify-content: space-around;
+}
+
+ul {
+	text-decoration: none;
+	list-style-type: none;
+	display: flex;
 }
 
 .nav-link {
 	text-decoration: none;
 	list-style-type: none;
 	padding: 0 1rem;
+	display: flex;
+	/* width: 10rem; */
 	color: #bdb6b6;
 }
-
-
+.nav-link:hover {
+	border: #bdb6b6 1px solid;
+}
 
 .navIcons > .icon {
-	width: 1rem;
+	width: 1.5rem;
 	aspect-ratio: 1;
 	background-color: #bdb6b6;
 	border-radius: 2px;
 	padding: 0 1.3px;
 	margin: 0 0.2rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.navIcons {
+		/* display: flex; */
+		position: fixed;
+		top: 40%;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		/* float: left; */
+		/* position: absolute; */
+		/* width: 100px; */
+	}
+
+	.navIcons > .icon {
+		margin-top: 10px;
+		margin-right: 5px;
+	}
+
+	.navbarEl {
+		justify-content: start;
+		width: 90%;
+	}
+
+	.navbarBrand {
+		/* width: 10rem; */
+		justify-content: center;
+		margin-left: 2rem;
+	}
+
+	.navbarEL > .nav-Links {
+		max-width: 15rem;
+		justify-content: space-between;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.nav-Links {
+		display: block;
+		flex-direction: column;
+	}
+
+	nav {
+		display: block;
+	}
+
+	.navbarBrand {
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.toggle-button {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 30px;
+		height: 30px;
+		display: block;
+		background-color: #bdb6b6;
+		border-radius: 11px;
+		padding-bottom: 1px;
+	}
+
+	.toggle-button:hover {
+		transform: scale(0.9, 0.9);
+		transition: width 3s;
+		/* width: 32px; */
+		aspect-ratio: 1 / 1;
+	}
+
+	.nav-Links {
+		background-color: #5f5c5c;
+		margin: 0;
+		width: 100vw;
+		justify-content: center;
+		padding: 0;
+	}
+
+	.collapse {
+		display: none;
+	}
+
+	.nav-link {
+		justify-content: center;
+		padding: 20px 0;
+	}
 }
 
 /* navBar css End */
