@@ -1,0 +1,50 @@
+section#hero {
+	background: url('../Assets/welcome.png') center center no-repeat fixed;
+	background-size: 100vw 100vh;
+}
+
+/* navBar css  */
+nav {
+	background-color: #262626;
+	height: 3.4rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbarBrand {
+	/* width: 10rem; */
+	height: 2rem;
+	justify-content: center;
+	margin-left: 3rem;
+}
+
+.navbarEl {
+	justify-content: start;
+	width: 58%;
+}
+
+.navbarEL > .nav-Links {
+	max-width: 15rem;
+	justify-content: space-around;
+}
+
+.nav-link {
+	text-decoration: none;
+	list-style-type: none;
+	padding: 0 1rem;
+	color: #bdb6b6;
+}
+
+
+
+.navIcons > .icon {
+	width: 1rem;
+	aspect-ratio: 1;
+	background-color: #bdb6b6;
+	border-radius: 2px;
+	padding: 0 1.3px;
+	margin: 0 0.2rem;
+}
+
+/* navBar css End */
