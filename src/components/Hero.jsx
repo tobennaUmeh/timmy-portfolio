@@ -22,7 +22,7 @@ const Hero = () => {
 				</div>
 				<div className='textfooter'>
 					<button className='btn btn-chat'>
-						Let's Have a Chat!
+						Lets Have a Chat!
 					</button>
 					<button className='btn btn-resume'>
 						Get My Resume
