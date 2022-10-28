@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../../components/Navbar';
 
 const TutoringPage = () => {
-  return (
-    <div>TutoringPage</div>
-  )
-}
+	return (
+		<>
+			<Navbar />
+		</>
+	);
+};
 
-export default TutoringPage
+export default TutoringPage;

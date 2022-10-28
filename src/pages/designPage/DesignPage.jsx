@@ -1,8 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../../components/Navbar';
 
 const DesignPage = () => {
   return (
-    <div>DesignPage</div>
+    <>
+      <Navbar />
+    </>
   )
 }
 

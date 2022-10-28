@@ -1,3 +1,5 @@
+/* This is where i wrote all the css styling for thge home page */
+
 section#hero {
 	background: url('../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
@@ -6,11 +8,14 @@ section#hero {
 /* navBar css  */
 nav {
 	box-sizing: border-box;
+	position: sticky;
+	top: 0;
 	background-color: #262626;
 	height: 3.4rem;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 3;
 }
 
 .toggle-button {
@@ -28,10 +33,12 @@ nav {
 .navbarEl {
 	justify-content: start;
 	width: 55%;
+	z-index: 5;
 }
 
 .navbarEL > ul.nav-Links {
 	justify-content: space-around;
+	z-index: 5;
 }
 
 ul {
@@ -43,17 +50,17 @@ ul {
 .nav-link {
 	text-decoration: none;
 	list-style-type: none;
-	padding: 0 1rem;
+	margin: 0 1rem;
 	display: flex;
 	/* width: 10rem; */
 	color: #bdb6b6;
 }
 .nav-link:hover {
-	border: #bdb6b6 1px solid;
+	border-bottom: #bdb6b6 1px solid;
 }
 
 .navIcons > .icon {
-	width: 1.5rem;
+	width: 1.3rem;
 	aspect-ratio: 1;
 	background-color: #bdb6b6;
 	border-radius: 2px;
@@ -69,6 +76,7 @@ ul {
 		right: 0;
 		display: flex;
 		flex-direction: column;
+		z-index: 3;
 		/* float: left; */
 		/* position: absolute; */
 		/* width: 100px; */
@@ -77,6 +85,7 @@ ul {
 	.navIcons > .icon {
 		margin-top: 10px;
 		margin-right: 5px;
+		z-index: 3;
 	}
 
 	.navbarEl {
@@ -93,6 +102,7 @@ ul {
 	.navbarEL > .nav-Links {
 		max-width: 15rem;
 		justify-content: space-between;
+		z-index: 5;
 	}
 }
 
@@ -100,10 +110,12 @@ ul {
 	.nav-Links {
 		display: block;
 		flex-direction: column;
+		z-index: 5;
 	}
 
 	nav {
 		display: block;
+		z-index: 5;
 	}
 
 	.navbarBrand {
@@ -147,7 +159,140 @@ ul {
 	.nav-link {
 		justify-content: center;
 		padding: 20px 0;
+		z-index: 5;
 	}
 }
 
 /* navBar css End */
+
+/* Hero component  */
+
+.heroHome {
+	display: grid;
+	grid-template-areas: a, b;
+	margin: 2rem 4rem;
+	grid-template-columns: repeat(2, 50%);
+	gap: 2rem;
+	position: relative;
+}
+
+/* lottie style  */
+
+.lottie-hero {
+	z-index: 1;
+	top: 50%;
+	left: 35%;
+	position: absolute;
+}
+
+.header {
+	font-size: 5vw;
+	margin-bottom: 1rem;
+}
+
+.textBody {
+	/* font-family: 'Product Sans'; */
+	margin-bottom: 1rem;
+	font-size: 1.8vw;
+	z-index: 10;
+	line-height: 150%;
+	margin-bottom: 1.5rem;
+}
+
+.heroEl {
+	z-index: 2;
+}
+
+.blackbox {
+	width: 38vw;
+	max-width: 450px;
+	min-width: 180px;
+	z-index: 3;
+	border-radius: 1rem;
+	background-color: #262626;
+	aspect-ratio: 1 / 1;
+	/* margin: 0 auto; */
+	overflow: hidden;
+}
+
+.heroEL:last-of-type {
+	display: grid;
+	place-items: start;
+}
+
+.btn {
+	padding: 1vw 1vw;
+	border-radius: 10px;
+	width: 16vw;
+	font-size: 1.4vw;
+	margin-bottom: 3rem;
+	cursor: pointer;
+	border: 1px black solid;
+}
+
+.btn:hover {
+	box-shadow: 10px #262626;
+}
+
+.btn-chat {
+	margin-right: 1rem;
+	color: white;
+	background-color: #262626;
+}
+
+.btn-resume {
+	background-color: #ffffff;
+}
+
+/* Responsive hero section  */
+
+@media (max-width: 550px) {
+	.heroHome {
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 1rem 1.5rem;
+		gap: 1rem;
+		/* grid-template-columns: repeat(1, 100%);
+    grid-template-areas: b, a; */
+	}
+
+	.lottie-hero {
+		top: 2%;
+		left: 60%;
+	}
+
+	.header {
+		font-size: 2rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.textBody {
+		font-size: 0.8rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.btn {
+		scale: 1.5;
+		border-radius: 5px;
+	}
+
+	.btn-chat {
+		margin-right: 3.5rem;
+		margin-left: 1rem;
+	}
+
+	.blackbox {
+		z-index: 1;
+	}
+}
+
+@media (max-width: 350px) {
+	.btn {
+		scale: 2;
+	}
+
+	.btn-chat {
+		margin-right: 4rem;
+		margin-left: 1rem;
+	}
+}

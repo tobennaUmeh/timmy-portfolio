@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './homeComponents.css';
 import navIcon from '../Assets/navIcon.svg';
 import { NavLink } from 'react-router-dom';
@@ -8,24 +8,20 @@ import Linkedin from '../Assets/linkedin.svg';
 import Git from '../Assets/github.svg';
 import Twitter from '../Assets/twitter.svg';
 import hamburger from '../Assets/hamburger.svg';
-import { useEffect } from 'react';
 
 const Navbar = () => {
-	useEffect(() => {
-		const togglebtn = document.querySelector('.toggle-button');
-		const navLinks = document.querySelector('.navbarEl');
 
-		togglebtn.addEventListener('click', () => {
-			return navLinks.classList.toggle('collapse');
-		});
-	}, []);
+	const btnRef = useRef();
+	const handleBtn = () => {
+		return btnRef.current.classList.toggle('collapse');
+	};
 
 	// console.log(navLinks);
 
 	const navEl = [
-		{ text: 'About Me', link: '/', key: 1 },
-		{ text: 'Design', link: '/' },
-		{ text: 'Turoring', link: '/' },
+		{ text: 'About Me', link: '/about', key: 1 },
+		{ text: 'Design', link: '/design' },
+		{ text: 'Turoring', link: '/tutor' },
 	];
 
 	const icons = [
@@ -36,17 +32,39 @@ const Navbar = () => {
 		{ icon: Twitter, key: 5 },
 	];
 
+	const active = {
+		color: 'white',
+		textDecoration: 'none',
+		listStyleType: 'none',
+	};
+
+	const normal = {
+		textDecoration: 'none',
+		listStyleType: 'none',
+		color: '#bdb6b6',
+	};
+
 	return (
 		<nav>
 			<NavLink to='/home'>
 				<img src={navIcon} className='navbarBrand' alt='Icon' />
 			</NavLink>
-			<img src={hamburger} alt='hamburger' className='toggle-button' />
-			<div className='navbarEl collapse'>
-				<ul className='nav-Links'>
+			<img
+				src={hamburger}
+				onClick={handleBtn}
+				alt='hamburger'
+				className='toggle-button'
+			/>
+			<div className='navbarEl '>
+				<ul ref={btnRef} className='nav-Links collapse'>
 					{navEl.map((El) => (
-						<li key={El.text}>
-							<NavLink className='nav-link' to={El.link}>
+						<li className='nav-link' key={El.text}>
+							<NavLink
+								style={({ isActive }) =>
+									isActive ? active : normal
+								}
+								to={El.link}
+							>
 								{El.text}
 							</NavLink>
 						</li>

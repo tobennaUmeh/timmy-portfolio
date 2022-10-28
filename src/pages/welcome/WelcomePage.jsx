@@ -10,7 +10,7 @@ const WelcomePage = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			navigate('/home');
-		}, 5000);
+		}, 10000);
 	});
 
 	const lottieStyle = {
