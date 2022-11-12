@@ -10,7 +10,6 @@ import Twitter from '../Assets/twitter.svg';
 import hamburger from '../Assets/hamburger.svg';
 
 const Navbar = () => {
-
 	const btnRef = useRef();
 	const handleBtn = () => {
 		return btnRef.current.classList.toggle('collapse');
@@ -46,9 +45,15 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<NavLink to='/home'>
-				<img src={navIcon} className='navbarBrand' alt='Icon' />
-			</NavLink>
+			<div className='navSmall'>
+				<NavLink to='/home'>
+					<img
+						src={navIcon}
+						className='navbarBrand'
+						alt='Icon'
+					/>
+				</NavLink>
+			</div>
 			<img
 				src={hamburger}
 				onClick={handleBtn}

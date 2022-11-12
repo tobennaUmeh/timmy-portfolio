@@ -1,8 +1,9 @@
-/* This is where i wrote all the css styling for thge home page */
+/* This is where i wrote all the css styling for the home page */
 
 section#hero {
 	background: url('../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
+	/* position: absolute; */
 }
 
 /* navBar css  */
@@ -16,6 +17,7 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	z-index: 99;
+	overflow: hidden;
 }
 
 .toggle-button {
@@ -97,6 +99,7 @@ ul {
 		/* width: 10rem; */
 		justify-content: center;
 		margin-left: 2rem;
+		width: fit-content;
 	}
 
 	.navbarEL > .nav-Links {
@@ -118,11 +121,18 @@ ul {
 		z-index: 5;
 	}
 
+	.navSmall {
+		width: 10px;
+		position: absolute;
+		left: 40%;
+		margin-top: 8px;
+	}
+
 	.navbarBrand {
-		justify-content: center;
-		margin: 0 auto;
-		margin-top: 10px;
-		width: 100%;
+		margin: 0;
+		display: grid;
+		/* text-align: center; */
+		/* width: 100%; */
 	}
 
 	.toggle-button {
@@ -328,6 +338,7 @@ ul {
 .title {
 	margin-top: 1.8rem;
 	font-size: 3rem;
+	text-align: center;
 	font-weight: bold;
 }
 
@@ -335,14 +346,50 @@ ul {
 	display: grid;
 	place-items: center;
 	margin: 0 10vw;
+	justify-content: center;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 
 /* Mosiic section  */
 
 .mosaic {
 	display: grid;
+	width: 80vw;
+}
+
+.resImg {
+	position: relative;
+}
+
+.Img {
+	width: 100%;
+	/* height: 100% ; */
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ffffff;
+	opacity: 0;
+	transition: opacity 0.4s ease-in;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.overText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.resImg:hover .overlay {
+	opacity: 1;
 }
 
 .resImg[data-text='Mandilas Nigeria Website'] {
@@ -409,54 +456,60 @@ ul {
 	grid-row-end: 6;
 }
 
-.Img {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	display: block;
-}
-
-.overlay {
-	position: relative;
-	bottom: 60%;
-	/* background-color: #bdb6b6; */
-	z-index: 10;
-}
-
-.overText {
-	position: relative;
-	box-shadow: #5f5c5c;
-	width: 50%;
-	/* height: 100%; */
-	font-size: 1.5rem;
-	font-weight: bold;
-	margin: 0 auto;
-	z-index: 5;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-	background-color: white;
-}
-
 .see {
 	padding: 0.5rem 2.5rem;
 	margin: 2rem 0;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 425px) {
+	#experience {
+		border-radius: 1% 3% 0 0;
+	}
+
 	.mosaic {
 		display: block;
 	}
-	.Img {
-		position: relative;
-	}
 	.overlay {
-		position: relative;
-		bottom: 50vw;
+		opacity: 0.75;
 	}
 }
 /* End Mosiic section  */
 
 /* END Experiecne section */
 
+/* Core Skill Set Component  */
+section#coreSkills {
+	/* position: relative; */
+	background: url('../Assets/coreSkills.png') center center no-repeat fixed;
+	background-size: 100vw 100vh;
+	color: #ebedee;
+}
 
+.title-skill {
+	margin-left: 2rem;
+	padding-top: 2rem;
+}
+
+.skillText {
+	margin-left: 2rem;
+	padding-top: 1rem;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+	.skillText {
+		font-size: 1.5rem;
+	}
+}
+
+/* .blackBox {
+	position: absolute;
+	background-color: #181819;
+	width: 100%;
+	top: 0;
+	opacity: 0.3;
+	bottom: 0;
+	height: 100%;
+	z-index: 2;
+} */

@@ -1,4 +1,5 @@
 import React from 'react';
+import CoreSkills from '../../components/CoreSkills';
 import Experience from '../../components/Experience';
 import Hero from '../../components/Hero';
 import Navbar from '../../components/Navbar';
@@ -10,6 +11,7 @@ const Home = () => {
 			<Navbar />
 			<Hero />
 			<Experience />
+			<CoreSkills />
 		</section>
 	);
 };
