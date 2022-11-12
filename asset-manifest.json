@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/timmy-portfolio/static/css/main.d594691f.css",
-    "main.js": "/timmy-portfolio/static/js/main.26461471.js",
+    "main.css": "/timmy-portfolio/static/css/main.0ec4327e.css",
+    "main.js": "/timmy-portfolio/static/js/main.67aec844.js",
     "static/media/BirBur.png": "/timmy-portfolio/static/media/BirBur.f93df4b5837b1613f00d.png",
     "static/media/mandilas.png": "/timmy-portfolio/static/media/mandilas.6b6c61663b85f530b78f.png",
+    "static/media/coreSkills.png": "/timmy-portfolio/static/media/coreSkills.8f1c0bb8f1966fd03742.png",
     "static/media/welcome.png": "/timmy-portfolio/static/media/welcome.57cc279f26c8d4ad2cb4.png",
     "static/media/ASSECO.png": "/timmy-portfolio/static/media/ASSECO.9a9d590cc77cbd575794.png",
     "static/media/Tailor.png": "/timmy-portfolio/static/media/Tailor.2ae8aaae41c6535c8246.png",
@@ -26,11 +27,11 @@
     "static/media/behance.svg": "/timmy-portfolio/static/media/behance.6c753dfec502e2c6f98206b7c91201ce.svg",
     "index.html": "/timmy-portfolio/index.html",
     "static/media/linkedin.svg": "/timmy-portfolio/static/media/linkedin.b36a49003fed3e09395ae435ba9a728a.svg",
-    "main.d594691f.css.map": "/timmy-portfolio/static/css/main.d594691f.css.map",
-    "main.26461471.js.map": "/timmy-portfolio/static/js/main.26461471.js.map"
+    "main.0ec4327e.css.map": "/timmy-portfolio/static/css/main.0ec4327e.css.map",
+    "main.67aec844.js.map": "/timmy-portfolio/static/js/main.67aec844.js.map"
   },
   "entrypoints": [
-    "static/css/main.d594691f.css",
-    "static/js/main.26461471.js"
+    "static/css/main.0ec4327e.css",
+    "static/js/main.67aec844.js"
   ]
 }
