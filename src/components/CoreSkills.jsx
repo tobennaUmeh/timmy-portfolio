@@ -6,7 +6,6 @@ const CoreSkills = () => {
 		{ text: 'Usability Testing' },
 		{ text: 'User Research' },
 		{ text: 'Design Planning' },
-		{ text: 'Design Planning' },
 		{ text: 'Team Management' },
 		{ text: 'UI Design' },
 		{ text: 'Human Computer Interaction' },
