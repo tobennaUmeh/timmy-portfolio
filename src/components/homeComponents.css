@@ -15,7 +15,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	z-index: 3;
+	z-index: 99;
 }
 
 .toggle-button {
@@ -53,7 +53,7 @@ ul {
 	margin: 0 1rem;
 	display: flex;
 	/* width: 10rem; */
-	color: #bdb6b6;
+	color: #d6cfcf;
 }
 .nav-link:hover {
 	border-bottom: #bdb6b6 1px solid;
@@ -62,7 +62,7 @@ ul {
 .navIcons > .icon {
 	width: 1.3rem;
 	aspect-ratio: 1;
-	background-color: #bdb6b6;
+	background-color: #d8cfcf;
 	border-radius: 2px;
 	padding: 0 1.3px;
 	margin: 0 0.2rem;
@@ -180,8 +180,8 @@ ul {
 
 .lottie-hero {
 	z-index: 1;
-	top: 50%;
-	left: 35%;
+	top: 45%;
+	left: 30%;
 	position: absolute;
 }
 
@@ -220,14 +220,21 @@ ul {
 	place-items: start;
 }
 
+.textfooter {
+	margin-bottom: 3rem;
+}
+
 .btn {
 	padding: 1vw 1vw;
 	border-radius: 10px;
-	width: 16vw;
-	font-size: 1.4vw;
-	margin-bottom: 3rem;
+	width: 17vw;
+	font-size: clamp(12px, 1.5vw, 13px);
+	/* font-size: 13px; */
 	cursor: pointer;
 	border: 1px black solid;
+	/* font-size: max(100px, min(10vw, 150px));  */
+	/* Browsers that do not support the "clamp ()" function will take this value. */
+	/* font-size: clamp(100px, 10vw, 150px); */
 }
 
 .btn:hover {
@@ -246,7 +253,7 @@ ul {
 
 /* Responsive hero section  */
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
 	.heroHome {
 		display: flex;
 		flex-direction: column-reverse;
@@ -267,18 +274,26 @@ ul {
 	}
 
 	.textBody {
-		font-size: 0.8rem;
+		font-size: 0.85rem;
 		margin-bottom: 0.5rem;
 	}
 
 	.btn {
-		scale: 1.5;
+		scale: 1.6;
 		border-radius: 5px;
+		margin-bottom: 1rem;
+		border: 0.1px black solid;
+		font-size: 0.39rem;
 	}
 
 	.btn-chat {
-		margin-right: 3.5rem;
+		margin-right: 3.7rem;
 		margin-left: 1rem;
+		margin-bottom: 0;
+	}
+
+	.btn-resume {
+		margin-bottom: 0;
 	}
 
 	.blackbox {
@@ -286,7 +301,7 @@ ul {
 	}
 }
 
-@media (max-width: 350px) {
+@media only screen and (max-width: 350px) {
 	.btn {
 		scale: 2;
 	}
@@ -296,3 +311,152 @@ ul {
 		margin-left: 1rem;
 	}
 }
+
+/* End pf hero section */
+
+/* experience section  */
+
+#experience {
+	background: #ebedee;
+	position: relative;
+	border-radius: 1% 20% 0 0;
+	z-index: 3;
+	display: grid;
+	place-items: center;
+}
+
+.title {
+	margin-top: 1.8rem;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.experiencetxt {
+	display: grid;
+	place-items: center;
+	margin: 0 10vw;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+/* Mosiic section  */
+
+.mosaic {
+	display: grid;
+}
+
+.resImg[data-text='Mandilas Nigeria Website'] {
+	/* display: grid; */
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.resImg[data-text='BirBur Eide Sharing / Rental Website'] {
+	grid-column-start: 4;
+	grid-column-end: 10;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.resImg[data-text='ScholarsHQ Mobile App'] {
+	grid-column-start: 10;
+	grid-column-end: 13;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.resImg[data-text='HighTable Complete Product'] {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.resImg[data-text='Pay4me Complete Product'] {
+	grid-column-start: 4;
+	grid-column-end: 10;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.resImg[data-text='Chealey Mobile Ecommerce App'] {
+	grid-column-start: 10;
+	grid-column-end: 13;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.resImg[data-text='ASSECO Sales Management SAAS App'] {
+	grid-column-start: 1;
+	grid-column-end: 7;
+	grid-row-start: 4;
+	grid-row-end: 6;
+}
+
+.resImg[data-text='Tailor On the Go Mobile App'] {
+	grid-column-start: 7;
+	grid-column-end: 10;
+	grid-row-start: 4;
+	grid-row-end: 6;
+}
+
+.resImg[data-text='AreaExpress Complete Product'] {
+	grid-column-start: 10;
+	grid-column-end: 13;
+	grid-row-start: 4;
+	grid-row-end: 6;
+}
+
+.Img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: block;
+}
+
+.overlay {
+	position: relative;
+	bottom: 60%;
+	/* background-color: #bdb6b6; */
+	z-index: 10;
+}
+
+.overText {
+	position: relative;
+	box-shadow: #5f5c5c;
+	width: 50%;
+	/* height: 100%; */
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0 auto;
+	z-index: 5;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+}
+
+.see {
+	padding: 0.5rem 2.5rem;
+	margin: 2rem 0;
+}
+
+@media only screen and (max-width: 660px) {
+	.mosaic {
+		display: block;
+	}
+	.Img {
+		position: relative;
+	}
+	.overlay {
+		position: relative;
+		bottom: 50vw;
+	}
+}
+/* End Mosiic section  */
+
+/* END Experiecne section */
+
+

@@ -4,7 +4,7 @@ import animationData from '../lottie/8586-rocket-in-space (1).json';
 import './homeComponents.css';
 
 const Hero = () => {
-	const lottieStyle = { width: '30vw', zIndex: 1 };
+	const lottieStyle = { width: '25vw', zIndex: 1 };
 	return (
 		<div className='heroHome' id='hero'>
 			<div className='lottie-hero'>
