@@ -60,7 +60,7 @@ const Navbar = () => {
 				alt='hamburger'
 				className='toggle-button'
 			/>
-			<div className='navbarEl '>
+			<div className='navbarEl'>
 				<ul ref={btnRef} className='nav-Links collapse'>
 					{navEl.map((El) => (
 						<li className='nav-link' key={El.text}>
