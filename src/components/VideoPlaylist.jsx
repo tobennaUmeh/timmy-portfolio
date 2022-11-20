@@ -20,7 +20,7 @@ const VideoPlaylist = () => {
 				<iframe
 					title='video'
 					class="responsive-iframe"
-					src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1'
+					src='https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=0&mute=1'
 				></iframe>
 			</div>
 		</div>
