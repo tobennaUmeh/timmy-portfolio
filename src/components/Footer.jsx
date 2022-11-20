@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<div id='footer'>
 			<div className="footer-header">
-        <Link to='/hpme'>
+        <Link to='/home'>
           <img className='footerImg' src={heartImg} alt='footer' />
         </Link>
         <div className='footer-body'>

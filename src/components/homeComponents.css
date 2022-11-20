@@ -3,7 +3,6 @@
 section#hero {
 	background: url('../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
-	position: absolute;
 }
 
 /* navBar css  */
@@ -605,6 +604,7 @@ section#coreSkills {
 
 /* footer */
 
+
 #footer {
 	background-color: #ebedee;
 	display: flex;
@@ -613,6 +613,9 @@ section#coreSkills {
 	justify-content: space-between;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	/* position: fixed;
+	width: 95vw;
+	bottom: 0; */
 }
 
 .footer-header {
