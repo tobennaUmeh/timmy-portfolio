@@ -1,29 +1,21 @@
 {
   "files": {
-    "main.css": "/timmy-portfolio/static/css/main.792c029f.css",
-    "main.js": "/timmy-portfolio/static/js/main.8afa10e6.js",
+    "main.css": "/timmy-portfolio/static/css/main.2fe596f7.css",
+    "main.js": "/timmy-portfolio/static/js/main.caaa8e22.js",
     "static/media/dreamyNight.png": "/timmy-portfolio/static/media/dreamyNight.ab922888b71be286b2a3.png",
     "static/media/BirBur.png": "/timmy-portfolio/static/media/BirBur.f93df4b5837b1613f00d.png",
     "static/media/mandilas.png": "/timmy-portfolio/static/media/mandilas.6b6c61663b85f530b78f.png",
-    "static/media/Jenny Sue.png": "/timmy-portfolio/static/media/Jenny Sue.7870f15c8d04964315dd.png",
     "static/media/coreSkills.png": "/timmy-portfolio/static/media/coreSkills.8f1c0bb8f1966fd03742.png",
-    "static/media/Pluggextra.png": "/timmy-portfolio/static/media/Pluggextra.6d9a45d5435f9b7ab6d0.png",
     "static/media/welcome.png": "/timmy-portfolio/static/media/welcome.57cc279f26c8d4ad2cb4.png",
     "static/media/ASSECO.png": "/timmy-portfolio/static/media/ASSECO.9a9d590cc77cbd575794.png",
     "static/media/Tailor.png": "/timmy-portfolio/static/media/Tailor.2ae8aaae41c6535c8246.png",
     "static/media/Pay4me.png": "/timmy-portfolio/static/media/Pay4me.e90ae0fbcf8a18a52a5b.png",
-    "static/media/Clear assessment.png": "/timmy-portfolio/static/media/Clear assessment.29c32b0b004b0a4b7c87.png",
-    "static/media/Atht.png": "/timmy-portfolio/static/media/Atht.baf8c90e0b5b11525438.png",
-    "static/media/Area.png": "/timmy-portfolio/static/media/Area.dcb9fabe0c3fa6ce78eb.png",
     "static/media/HighTable.png": "/timmy-portfolio/static/media/HighTable.95c541b2ad0564fa0fae.png",
-    "static/media/Citiapp.png": "/timmy-portfolio/static/media/Citiapp.6c8ce3974858625108f4.png",
     "static/media/AreaExpress.png": "/timmy-portfolio/static/media/AreaExpress.14c9412b3fc9244938de.png",
     "static/media/OggText-Medium.woff": "/timmy-portfolio/static/media/OggText-Medium.b684050b517dfb6fcd1f.woff",
     "static/media/Chealey.png": "/timmy-portfolio/static/media/Chealey.211477abda9a20443e56.png",
     "static/media/Ogg-Bold.woff": "/timmy-portfolio/static/media/Ogg-Bold.67e01831c55b4c692947.woff",
-    "static/media/OddVikings.png": "/timmy-portfolio/static/media/OddVikings.0e496e1303b859739e7f.png",
     "static/media/Ogg-Regular.woff": "/timmy-portfolio/static/media/Ogg-Regular.952c7df377bf0f45c1f8.woff",
-    "static/media/NigerisCivil.png": "/timmy-portfolio/static/media/NigerisCivil.c752bf5f47f7a5c05938.png",
     "static/media/Product Sans Bold.ttf": "/timmy-portfolio/static/media/Product Sans Bold.53df38d5491afbeb42a5.ttf",
     "static/media/ScholarHQ.png": "/timmy-portfolio/static/media/ScholarHQ.2053a34334acc088dc4f.png",
     "static/media/Product Sans Regular.ttf": "/timmy-portfolio/static/media/Product Sans Regular.d165384076551a756b3c.ttf",
@@ -44,11 +36,11 @@
     "index.html": "/timmy-portfolio/index.html",
     "static/media/Linkedinsvg.svg": "/timmy-portfolio/static/media/Linkedinsvg.e59fc309435db4d4d49ab13f1d433d04.svg",
     "static/media/linkedin.svg": "/timmy-portfolio/static/media/linkedin.b36a49003fed3e09395ae435ba9a728a.svg",
-    "main.792c029f.css.map": "/timmy-portfolio/static/css/main.792c029f.css.map",
-    "main.8afa10e6.js.map": "/timmy-portfolio/static/js/main.8afa10e6.js.map"
+    "main.2fe596f7.css.map": "/timmy-portfolio/static/css/main.2fe596f7.css.map",
+    "main.caaa8e22.js.map": "/timmy-portfolio/static/js/main.caaa8e22.js.map"
   },
   "entrypoints": [
-    "static/css/main.792c029f.css",
-    "static/js/main.8afa10e6.js"
+    "static/css/main.2fe596f7.css",
+    "static/js/main.caaa8e22.js"
   ]
 }
