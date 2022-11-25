@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Tailor from '../Assets/Tailor.png';
 import Asseco from '../Assets/ASSECO.png';
 import AreaExpress from '../Assets/Area.png';
@@ -16,6 +17,10 @@ import Civil from '../Assets/NigerisCivil.png';
 import OddsVikings from '../Assets/OddVikings.png';
 
 const DesignBody = () => {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
 	const data = [
 		{
 			img: Tailor,
@@ -24,7 +29,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'vertical',
-			link: '/',
+			link: '/design',
 			header: 'Tailor On The Go App',
 		},
 		{
@@ -34,7 +39,7 @@ const DesignBody = () => {
 			year: '2020',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'ASSECO MArketplace Web Application',
 		},
 		{
@@ -44,7 +49,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'vertical',
-			link: '/',
+			link: '/design',
 			header: 'Area Express Web Application',
 		},
 		{
@@ -54,7 +59,7 @@ const DesignBody = () => {
 			year: '2019',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'Citistack App',
 		},
 		{
@@ -64,7 +69,7 @@ const DesignBody = () => {
 			year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'vertical',
-			link: '/',
+			link: '/design',
 			header: 'Chealey Electronics App',
 		},
 		{
@@ -84,7 +89,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'ATHT Group Website',
 		},
 		{
@@ -94,7 +99,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'vertical',
-			link: '/',
+			link: '/design',
 			header: 'Hightable Africa App',
 		},
 		{
@@ -113,7 +118,7 @@ const DesignBody = () => {
 			year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'BiRBuR Rideshare/Rental App',
 		},
 		{
@@ -123,7 +128,7 @@ const DesignBody = () => {
 			year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'Jenny Sue Doula Website',
 		},
 		{
@@ -133,7 +138,7 @@ const DesignBody = () => {
 			year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 		},
 		{
 			img: Clear,
@@ -142,7 +147,7 @@ const DesignBody = () => {
 			year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'Clear Assessments Mental Health Assessment App',
 		},
 		{
@@ -152,7 +157,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'Nigerian Civil Aviation Authority Helpdesk',
 		},
 		{
@@ -162,7 +167,7 @@ const DesignBody = () => {
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/',
+			link: '/design',
 			header: 'Odds Vikings Sports Betting Website',
 		},
 	];
@@ -197,7 +202,11 @@ const DesignBody = () => {
 									</div>
 									<div className='designHero-card-text'>{item.text}</div>
 									<div className=''>
-										<button className='designHero-btn'>View Case Study</button>
+										<NavLink onClick={scrollTop} to={item.link}>
+											<button className='designHero-btn'>
+												View Case Study
+											</button>
+										</NavLink>
 									</div>
 								</div>
 							</div>

@@ -10,6 +10,9 @@ import Twitter from '../Assets/twitter.svg';
 import hamburger from '../Assets/hamburger.svg';
 
 const Navbar = () => {
+	const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 	const btnRef = useRef();
 	const handleBtn = () => {
 		return btnRef.current.classList.toggle('collapse');
@@ -46,7 +49,7 @@ const Navbar = () => {
 	return (
 		<nav>
 			<div className='navSmall'>
-				<NavLink to='/home'>
+				<NavLink onClick={scrollTop} to='/home'>
 					<img
 						src={navIcon}
 						className='navbarBrand'
@@ -64,7 +67,7 @@ const Navbar = () => {
 				<ul ref={btnRef} className='nav-Links collapse'>
 					{navEl.map((El) => (
 						<li className='nav-link' key={El.text}>
-							<NavLink
+							<NavLink onClick={scrollTop}
 								style={({ isActive }) =>
 									isActive ? active : normal
 								}
