@@ -1,0 +1,84 @@
+/* This is where the css file for the design page is stored */
+
+.designHero {
+	background: url('../Assets/welcome.png') center center no-repeat fixed;
+	background-size: 100vw 100vh;
+	padding: 1.5rem 2rem;
+}
+
+.designHero-header {
+	display: flex;
+	margin-right: 0;
+	/* width: 100vw; */
+}
+
+.designHero-h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+
+.designHero-text {
+	font-size: 1.3rem;
+	margin-top: 0.5rem;
+	max-width: 80%;
+}
+
+.designHero-svg {
+	width: 3rem;
+	height: 3rem;
+	align-self: flex-end;
+	bottom: 0;
+}
+
+.designHero-body {
+	display: grid;
+}
+
+.designHero-body--svg {
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.svg {
+	width: 100%;
+	height: 100%;
+}
+
+.designHero-card {
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 2rem;
+}
+
+.designHero-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1rem 0;
+}
+
+.designHero-card-text {
+	font-size: 0.9rem;
+	margin: 0.5rem 0;
+	line-height: 1.5rem;
+}
+
+.designHero-sub {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.designHero-sub-desc {
+	margin-left: 1.5rem;
+}
+
+.designHero-btn {
+	padding: 0.5rem 1.5rem;
+	margin-top: 1rem;
+	color: #d8cfcf;
+	font-size: 0.9rem;
+	background-color: #262626;
+}
