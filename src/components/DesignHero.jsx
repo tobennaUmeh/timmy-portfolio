@@ -2,21 +2,6 @@ import React from 'react';
 import './DesignPage.css';
 import designImage from '../Assets/designImage.png';
 import mandilas from '../Assets/mandilas.png';
-import BirBur from '../Assets/BirBur.png';
-import ScholarHQ from '../Assets/ScholarHQ.png';
-import HighTable from '../Assets/HighTable.png';
-import Pay4me from '../Assets/Pay4me.png';
-import Chealey from '../Assets/Chealey.png';
-import Asseco from '../Assets/ASSECO.png';
-import Tailor from '../Assets/Tailor.png';
-import AreaExpress from '../Assets/Area.png';
-import OddsVikings from '../Assets/OddVikings.png';
-import Civil from '../Assets/NigerisCivil.png';
-import Clear from '../Assets/Clear assessment.png';
-import plugg from '../Assets/Pluggextra.png';
-import Jenny from '../Assets/Jenny Sue.png';
-import Athe from '../Assets/Atht.png';
-import Citi from '../Assets/Citiapp.png';
 
 const DesignHero = () => {
 	return (

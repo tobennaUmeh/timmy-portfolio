@@ -81,4 +81,38 @@
 	color: #d8cfcf;
 	font-size: 0.9rem;
 	background-color: #262626;
+	transition: background-color 0.4s ease-in-out, color 0.3s ease-in;
+	cursor: pointer;
+}
+
+.designHero-btn:hover {
+	color: #262626;
+	background-color: #d8cfcf;
+}
+
+@media only screen and (max-width: 750px) {
+	.designHero {
+		padding: 0.5rem 1rem;
+	}
+
+	.designHero-body {
+		display: grid;
+		flex-direction: row-reverse;
+	}
+
+	.designHero-body--svg {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 2;
+		grid-row-end: 3;
+		margin-top: 1rem;
+	}
+
+	.designHero-card {
+		grid-column-start: 1;
+		grid-column-end: 2;
+		grid-row-start: 1;
+		grid-row-end: 2;
+		padding-left: 0;
+	}
 }
