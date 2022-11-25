@@ -72,9 +72,9 @@ const Experience = () => {
 		<div id='experience'>
 			<div className='title'>Featured Works</div>
 			<div className='experiencetxt'>
-				I am uber proud of the products I have worked on and all the
-				clients I have worked with over the years. Check out some of
-				the amazing results I have delivered
+				I am uber proud of the products I have worked on and all the clients I
+				have worked with over the years. Check out some of the amazing results I
+				have delivered
 			</div>
 			<div className='mosaic'>
 				{data.map((img) => {
@@ -94,10 +94,7 @@ const Experience = () => {
 								alt={img.text}
 							/>
 							<div data-color={img.color} class='overlay'>
-								<div
-									className='overText'
-									style={{ color: `${img.color}` }}
-								>
+								<div className='overText' style={{ color: `${img.color}` }}>
 									{img.text}
 								</div>
 							</div>
@@ -106,8 +103,7 @@ const Experience = () => {
 				})}
 			</div>
 			<Link to='/design'>
-
-			<button className='see'>See More</button>
+				<button className='see'>See More</button>
 			</Link>
 		</div>
 	);

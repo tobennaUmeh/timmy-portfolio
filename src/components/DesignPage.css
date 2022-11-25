@@ -1,5 +1,7 @@
 /* This is where the css file for the design page is stored */
 
+/* DesignHero start  */
+
 .designHero {
 	background: url('../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
@@ -81,13 +83,13 @@
 	color: #d8cfcf;
 	font-size: 0.9rem;
 	background-color: #262626;
-	transition: background-color 0.4s ease-in-out, color 0.3s ease-in;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in;
 	cursor: pointer;
 }
 
 .designHero-btn:hover {
 	color: #262626;
-	background-color: #d8cfcf;
+	background-color: #ffffff;
 }
 
 @media only screen and (max-width: 750px) {
@@ -116,3 +118,10 @@
 		padding-left: 0;
 	}
 }
+
+/* DesignHero end  */
+
+/* DesignBody start  */
+
+
+/* DesignBody end  */

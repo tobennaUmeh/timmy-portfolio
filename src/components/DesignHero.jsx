@@ -18,7 +18,7 @@ const DesignHero = () => {
 			</div>
 			<div className='designHero-body'>
 				<div className='designHero-body--svg'>
-					<img className='svg' src={mandilas} alt='mandilas' />
+					<img className='svg' loading='lazy' src={mandilas} alt='mandilas' />
 				</div>
 				<div className='designHero-card'>
 					<div className='designHero-title'>Mandilas Web Application</div>

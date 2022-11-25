@@ -132,7 +132,8 @@ section#abt {
 @media only screen and (max-width: 450px) {
 	.approach-main {
 		padding-left: 1rem;
-		padding-right: 1rem;
+		padding-right: 1.3rem;
+		line-height: 2rem;
 	}
 }
 
@@ -143,7 +144,7 @@ section#abt {
 }
 
 .apporach-body {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 /* End Approach section  */

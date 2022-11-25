@@ -1,4 +1,5 @@
 import React from 'react';
+import DesignBody from '../../components/DesignBody';
 import DesignHero from '../../components/DesignHero';
 import Footer from '../../components/Footer';
 import Navbar from '../../components/Navbar';
@@ -8,6 +9,7 @@ const DesignPage = () => {
 		<>
 			<Navbar />
 			<DesignHero />
+			<DesignBody />
 			<Footer />
 		</>
 	);
