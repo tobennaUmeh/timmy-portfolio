@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/timmy-portfolio/static/css/main.065b07a5.css",
-    "main.js": "/timmy-portfolio/static/js/main.973117ad.js",
+    "main.css": "/timmy-portfolio/static/css/main.6a999eb1.css",
+    "main.js": "/timmy-portfolio/static/js/main.c7ef0aea.js",
     "static/media/dreamyNight.png": "/timmy-portfolio/static/media/dreamyNight.ab922888b71be286b2a3.png",
     "static/media/BirBur.png": "/timmy-portfolio/static/media/BirBur.f93df4b5837b1613f00d.png",
     "static/media/mandilas.png": "/timmy-portfolio/static/media/mandilas.6b6c61663b85f530b78f.png",
@@ -35,11 +35,11 @@
     "index.html": "/timmy-portfolio/index.html",
     "static/media/Linkedinsvg.svg": "/timmy-portfolio/static/media/Linkedinsvg.e59fc309435db4d4d49ab13f1d433d04.svg",
     "static/media/linkedin.svg": "/timmy-portfolio/static/media/linkedin.b36a49003fed3e09395ae435ba9a728a.svg",
-    "main.065b07a5.css.map": "/timmy-portfolio/static/css/main.065b07a5.css.map",
-    "main.973117ad.js.map": "/timmy-portfolio/static/js/main.973117ad.js.map"
+    "main.6a999eb1.css.map": "/timmy-portfolio/static/css/main.6a999eb1.css.map",
+    "main.c7ef0aea.js.map": "/timmy-portfolio/static/js/main.c7ef0aea.js.map"
   },
   "entrypoints": [
-    "static/css/main.065b07a5.css",
-    "static/js/main.973117ad.js"
+    "static/css/main.6a999eb1.css",
+    "static/js/main.c7ef0aea.js"
   ]
 }
