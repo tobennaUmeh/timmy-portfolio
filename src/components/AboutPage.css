@@ -25,8 +25,62 @@ section#abt {
 
 .abtHero {
 	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 1.5rem;
+	/* gap: 1rem; */
+	/* flex-direction: column-reverse; */
+	/* grid-auto-flow: dense; */
+}
+
+/* .b {
+	grid-column: 2;
+	grid-row: 1;
+} */
+
+.blk {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.b {
+	grid-column-start: 4;
+	grid-column-end: 12;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 2rem;
+}
+/* Resoponsiveness */
+@media only screen and (max-width: 750px) {
+	section#abt {
+		padding: 0.6rem 0;
+	}
+
+	.abt-title {
+		font-size: 2.5rem;
+	}
+
+	.abtHero {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.b {
+		display: block;
+		margin-bottom: 1rem;
+		padding-left: 1rem;
+	}
+
+	.blackbox[data-abt='1'] {
+		width: auto;
+	}
+
+	.blk {
+		padding: 0 1rem;
+	}
+
+	.socials-svg {
+		font-size: 1;
+	}
 }
 
 .blackbox[data-abt='1'] {
@@ -34,26 +88,126 @@ section#abt {
 	/* scale: 1/0.5; */
 }
 
+/* .blk {
+	max-width: 40vw;
+} */
+
+/* @media screen only and max-width {
+	
+} */
+
 .socials {
 	display: grid;
 	grid-template-columns: repeat(3, auto);
-	gap: 2rem;
+	gap: 1.5rem;
 	margin-top: 2rem;
-  justify-content: space-between;
+	justify-content: space-around;
 }
 
 .socials-svg {
-	width: 5rem;
+	width: 4rem;
 }
 
 .abt-txt {
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	padding: 0 1rem;
 	margin-top: 2rem;
 	/* border-left: attr(data-color) solid 1rem; */
 }
 
 .ques {
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 }
+
+/* Approach section  */
+
+.approach-main {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.apporach-header {
+	font-size: 2.5rem;
+	font-weight: bold;
+	padding-top: 1.5rem;
+}
+
+.apporach-body {
+	font-size: 1.5rem;
+}
+
+/* End Approach section  */
+
+/* UXSection start  */
+.uxsect {
+	padding-top: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.uxHeader {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+ul li.list-el::marker {
+	content: '😁  ';
+	font-size: 0.9rem;
+}
+
+ul li.list-el {
+	font-size: 1.3rem;
+}
+/* UXSection end  */
+
+/* testimonials start */
+.testimonials {
+	padding-top: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin-bottom: 5rem;
+}
+
+.testimonials-card {
+	box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+
+	padding: 1rem;
+	transition: box-shadow 0.5s;
+}
+
+.testimonials-card:hover {
+	box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -0.1rem -0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
+
+	/* font-size: 1.1rem */
+}
+
+.testimonials-header {
+	display: flex;
+}
+
+.testimonials-dot {
+	margin-right: 1rem;
+	justify-content: center;
+	align-self: center;
+}
+
+.testimonials--name {
+	font-size: 1.5rem;
+}
+
+.testimonials-company {
+	font-size: 1.2rem;
+}
+
+/* testimonials end */

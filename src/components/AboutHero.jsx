@@ -56,7 +56,7 @@ const abtHero = () => {
 		<section id='abt'>
 			<div className='abt-title'>About Me</div>
 			<div className='abtHero'>
-				<div className='abtHero-flex'>
+				<div className='abtHero-flex blk'>
 					<div className='blackbox' data-abt='1'>
 						<button className='abt-btn'>Get my Resume</button>
 					</div>
@@ -74,7 +74,7 @@ const abtHero = () => {
 					</div>
 				</div>
 
-				<div className='abtHero-flex'>
+				<div className='abtHero-flex b'>
 					<div className='ques'>Why "Timmy?"</div>
 					{data.map((txt) => {
 						return (
