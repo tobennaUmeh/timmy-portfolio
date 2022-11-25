@@ -122,6 +122,173 @@
 /* DesignHero end  */
 
 /* DesignBody start  */
+.designBody {
+	display: grid;
+}
 
+.designBody-card {
+	grid-column-start: 5;
+	grid-column-end: 7;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	padding-left: 2rem;
+}
 
-/* DesignBody end  */
+/* .designBody-body--svg{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+} */
+
+.designBody-body--body[data-orientation='vertical'] {
+	display: grid;
+}
+
+.designBody-body--body[data-orientation='vertical'] > .designBody-body--svg {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.designBody-body--body[data-orientation='vertical'] > .designBody-body--card {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.designBody-body--body {
+	margin-top: 1.3rem;
+}
+
+.designBody-Body[data-type='Tailor On The Go App'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.designBody-Body[data-type='ASSECO MArketplace Web Application'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+
+.designBody-Body[data-type='Area Express Web Application'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 2;
+	grid-row-end: 4;
+}
+
+.designBody-Body[data-type='Citistack App'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.designBody-Body[data-type='Chealey Electronics App'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 4;
+	grid-row-end: 5;
+}
+
+.designBody-Body[data-type='Pay4Me Fintech App'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 6;
+}
+
+.designBody-Body[data-type='Atht Group Website'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 5;
+	grid-row-end: 7;
+}
+
+.designBody-Body[data-type='Hightable Africa App'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 6;
+	grid-row-end: 7;
+}
+
+.designBody-Body[data-type='ScholarHQ Community App'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 7;
+	grid-row-end: 8;
+}
+
+.designBody-Body[data-type='BiRBuR Rideshare/Rental App'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 9;
+}
+
+.designBody-Body[data-type='Jenny Sue Doula Website'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 8;
+	grid-row-end: 10;
+}
+
+.designBody-Body[data-type='Pluggxtra Entertainment News Website'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 9;
+	grid-row-end: 11;
+}
+
+.designBody-Body[data-type='Clear Assessments Mental Health Assessment App'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 10;
+	grid-row-end: 12;
+}
+
+.designBody-Body[data-type='Nigerian Civil Aviation Authority Helpdesk'] {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 11;
+	grid-row-end: 13;
+}
+
+.designBody-Body[data-type='Odds Vikings Sports Betting Website'] {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 12;
+	grid-row-end: 14;
+	margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 750px) {
+	.designBody {
+		display: block;
+	}
+
+	.designBody-body--body[data-orientation='vertical'] {
+		display: grid;
+		margin-top: 0;
+		padding: 0 1rem;
+	}
+
+	.designBody-body--body[data-orientation='vertical']
+		> .designHero-body--svg
+		> .svg {
+		margin: 0 auto;
+		width: 75%;
+		height: 75%;
+	}
+
+	.designHero-body--svg {
+		margin-top: 0;
+	}
+
+} /* DesignBody end  */

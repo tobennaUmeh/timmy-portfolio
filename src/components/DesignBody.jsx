@@ -17,9 +17,9 @@ import Civil from '../Assets/NigerisCivil.png';
 import OddsVikings from '../Assets/OddVikings.png';
 
 const DesignBody = () => {
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+	const scrollTop = () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
 
 	const data = [
 		{
@@ -48,7 +48,7 @@ const DesignBody = () => {
 			platform: 'Web, IOS & Android',
 			year: '2021',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
-			placement: 'vertical',
+			placement: 'horizontal',
 			link: '/design',
 			header: 'Area Express Web Application',
 		},
@@ -58,7 +58,7 @@ const DesignBody = () => {
 			platform: 'IOS & Android',
 			year: '2019',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
-			placement: 'horizontal',
+			placement: 'vertical',
 			link: '/design',
 			header: 'Citistack App',
 		},
@@ -90,7 +90,7 @@ const DesignBody = () => {
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
 			link: '/design',
-			header: 'ATHT Group Website',
+			header: 'Atht Group Website',
 		},
 		{
 			img: HighTable,
@@ -135,10 +135,11 @@ const DesignBody = () => {
 			img: plugg,
 			role: 'Product Designer',
 			platform: 'Web',
-			year: '2022',
+      year: '2022',
 			text: "I'm extremely proud of my UI/UX students from around the world. We ensure a collaborative and friendly environment to get them job ready with a portfolio and resume to match the role.",
 			placement: 'horizontal',
-			link: '/design',
+      link: '/design',
+      header: 'Pluggxtra Entertainment News Website',
 		},
 		{
 			img: Clear,
@@ -172,20 +173,27 @@ const DesignBody = () => {
 		},
 	];
 	return (
-		<div>
+		<div className='designBody'>
 			{data.map((item) => {
 				return (
-					<div data-orientatiion={item.placement} className='designHero'>
-						<div className='designHero-body'>
-							<div className='designHero-body--svg'>
+					<div
+						key={item.header}
+						data-type={item.header}
+						className='designBody-Body'
+					>
+						<div
+							data-orientation={item.placement}
+							className='designBody-body--body'
+						>
+							<div className='designBody-body--svg'>
 								<img
 									className='svg'
 									loading='lazy'
 									src={item.img}
-									alt='mandilas'
+									alt={item.header}
 								/>
 							</div>
-							<div className='designHero-card'>
+							<div className='designBody-card'>
 								<div className='designHero-title'>{item.header}</div>
 								<div className='designHero-body'>
 									<div className='designHero-sub'>
