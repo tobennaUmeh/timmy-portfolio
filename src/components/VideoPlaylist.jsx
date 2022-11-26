@@ -1,5 +1,5 @@
 import React from 'react';
-import './homeComponents.css';
+import './css/homeComponents.css';
 
 const VideoPlaylist = () => {
 	return (

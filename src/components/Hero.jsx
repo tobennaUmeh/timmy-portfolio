@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import animationData from '../lottie/8586-rocket-in-space (1).json';
-import './homeComponents.css';
+import './css/homeComponents.css';
 
 const Hero = () => {
 	const lottieStyle = { width: '25vw', zIndex: 1 };

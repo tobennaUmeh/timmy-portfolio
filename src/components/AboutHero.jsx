@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutPage.css';
+import './css/AboutPage.css';
 import Be from '../Assets/behancesvg.svg';
 import Insta from '../Assets/Instasvg.svg';
 import Linkedin from '../Assets/Linkedinsvg.svg';

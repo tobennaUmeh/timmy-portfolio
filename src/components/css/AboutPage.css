@@ -1,5 +1,5 @@
 section#abt {
-	background: url('../Assets/welcome.png') center center no-repeat fixed;
+	background: url('../../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
 	padding: 1.5rem 2rem;
 	/* width: max-content; */

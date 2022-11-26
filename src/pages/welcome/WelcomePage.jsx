@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 const WelcomePage = () => {
 	const navigate = useNavigate();
+	const nextPage = () => navigate('/home');
 	useEffect(() => {
 		setTimeout(() => {
 			navigate('/home');
@@ -18,7 +19,7 @@ const WelcomePage = () => {
 		height: '100vh',
 	};
 	return (
-		<div className='hero'>
+		<div onClick={nextPage} className='hero'>
 			<div className='lottie'>
 				<Lottie style={lottieStyle} animationData={animationData} />
 			</div>

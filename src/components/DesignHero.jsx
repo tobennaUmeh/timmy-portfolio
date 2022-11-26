@@ -1,5 +1,5 @@
 import React from 'react';
-import './DesignPage.css';
+import './css/DesignPage.css';
 import designImage from '../Assets/designImage.png';
 import mandilas from '../Assets/mandilas.png';
 

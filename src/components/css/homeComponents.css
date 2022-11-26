@@ -1,7 +1,7 @@
 /* This is where i wrote all the css styling for the home page */
 
 section#hero {
-	background: url('../Assets/welcome.png') center center no-repeat fixed;
+	background: url('../../Assets/welcome.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
 }
 
@@ -462,7 +462,7 @@ ul.nav-Links {
 /* Core Skill Set Component  */
 section#coreSkills {
 	/* position: relative; */
-	background: url('../Assets/coreSkills.png') center center no-repeat fixed;
+	background: url('../../Assets/coreSkills.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
 	color: #ebedee;
 }
@@ -538,7 +538,7 @@ section#coreSkills {
 
 #innovate {
 	/* position: relative; */
-	background: url('../Assets/dreamyNight.png') center center no-repeat fixed;
+	background: url('../../Assets/dreamyNight.png') center center no-repeat fixed;
 	background-size: 100vw 100vh;
 
 	color: black;

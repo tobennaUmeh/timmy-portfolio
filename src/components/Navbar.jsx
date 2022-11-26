@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './homeComponents.css';
+import './css/homeComponents.css';
 import navIcon from '../Assets/navIcon.svg';
 import { NavLink } from 'react-router-dom';
 import Be from '../Assets/behance.svg';
