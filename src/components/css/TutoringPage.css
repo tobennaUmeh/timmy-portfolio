@@ -1,20 +1,21 @@
 /* this is where the styling for the titoring page is kept */
 
 section.turorHero {
-  background: url('../../Assets/welcome.png') center center no-repeat fixed;
-  background-size: 100vw 100vh;
-  padding: 1.5rem 2rem;
+	background: url('../../Assets/welcome.png') center center no-repeat fixed;
+	background-size: 100vw 100vh;
+	padding: 1.5rem 2rem;
 }
 
 .turorHero-flex {
 	display: flex;
 	justify-content: space-between;
 	width: 60vw;
+	margin-bottom: 3rem;
 }
 
-.turorHero-h1 { 
-  font-size: 2.5rem;
-  font-weight: bold;
+.turorHero-h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
 }
 
 .turorHero-svg {
@@ -22,4 +23,44 @@ section.turorHero {
 	height: 3rem;
 	align-self: flex-end;
 	bottom: 0;
+}
+
+.tutorCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30vw;
+	/* height: 30vh; */
+	padding: 1rem;
+	background-color: #f5f5f5;
+	border-radius: 0.5rem;
+}
+
+.cardTitle {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.cardDesc {
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
+  font-family: 'Product Sans';
+}
+
+.cardFooter {
+	font-weight: bold;
+	cursor: pointer;
+  width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.tutorCard:hover {
+  transform: scale(1.05);
+}
+
+.cardFooter:hover {
+  /* color: #d74dec; */
+  color: #e8e1fd;
 }

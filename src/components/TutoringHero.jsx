@@ -8,21 +8,60 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import figjam from '../Assets/Figjam.png';
+import figma from '../Assets/FigmaBootcamp.png';
+import productUIUX from '../Assets/productUIUX.png';
 
 const TutoringHero = () => {
-	const data = [{}];
+	const data = [
+		{
+			img: figma,
+			title: 'Figma Design Bootcamp',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+			link: './tutor',
+			time: '2 weeks',
+		},
+		{
+			img: figjam,
+			title: 'UX Planning FigJam Masterclass',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+			link: './tutor',
+			time: '2 weeks',
+		},
+		{
+			img: productUIUX,
+			title: 'Product UI/UX Design Bootcamp',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+			link: './tutor',
+			time: '8 weeks',
+		},
+	];
 
 	return (
 		<section className='turorHero'>
 			<div className='turorHero-flex'>
-				<div className='turorHero-h1'>Tutoring Programes</div>
+				<div className='turorHero-h1'>Tutoring Programmes</div>
 				<img className='turorHero-svg' src={designImage} alt='img' />
 			</div>
-			<Swiper
+			<div className='tutorCard'>
+				<img src={figma} alt='figma' />
+				<div className='cardBody'>
+					<div className='cardTitle'>Figma Design Bootcamp</div>
+					<div className='cardDesc'>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					</div>
+					<div className='cardFooter'>
+						Read More <span>&gt;</span>
+					</div>
+				</div>
+			</div>
+
+			{/* <Swiper
 				// install Swiper modules
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
 				spaceBetween={50}
-				slidesPerView={3}
+				slidesPerView={2}
 				navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
@@ -34,7 +73,7 @@ const TutoringHero = () => {
 				<SwiperSlide>Slide 3</SwiperSlide>
 				<SwiperSlide>Slide 4</SwiperSlide>
 				...
-			</Swiper>
+			</Swiper> */}
 		</section>
 	);
 };

@@ -3,23 +3,31 @@ import Lottie from 'lottie-react';
 import './Welcome.css';
 import animationData from '../../lottie/106433-bird-flock-test (1).json';
 import WelcomeBtn from '../../Assets/welcomebtn.svg';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const WelcomePage = () => {
 	const navigate = useNavigate();
-	const nextPage = () => navigate('/home');
-	useEffect(() => {
+	// let location;
+	// useEffect(() => {
+	// 	location = useLocation();
+	// });
+	const location = useLocation();
+	let nextPage = () => (location.pathname === '/' ? navigate('/home') : null);
+
+	let loadPage = () => {
 		setTimeout(() => {
-			navigate('/home');
-		}, 10000);
-	});
+			nextPage();
+			console.log(location.pathname);
+		}, 5000);
+	};
+
 
 	const lottieStyle = {
 		width: '100vw',
 		height: '100vh',
 	};
 	return (
-		<div onClick={nextPage} className='hero'>
+		<div onLoad={loadPage} onClick={nextPage} className='hero'>
 			<div className='lottie'>
 				<Lottie style={lottieStyle} animationData={animationData} />
 			</div>
