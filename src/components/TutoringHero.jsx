@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/css/TutoringPage.css';
 import designImage from '../Assets/designImage.png';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Mousewheel, Autoplay, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import Swiper and modules styles
 import 'swiper/css';
@@ -43,6 +43,75 @@ const TutoringHero = () => {
 				<div className='turorHero-h1'>Tutoring Programmes</div>
 				<img className='turorHero-svg' src={designImage} alt='img' />
 			</div>
+
+			<Swiper
+				// install Swiper modules
+				modules={[Mousewheel, Autoplay, Pagination, Scrollbar, A11y]}
+				spaceBetween={1}
+				// loop={true}
+				autoplay={{ delay: 3000, disableOnInteraction: true }}
+				breakpoints={{
+					// when window width is >= 425px
+					425: {
+						width: 425,
+						slidesPerView: 1,
+					},
+					// when window width is >= 640px
+					640: {
+						width: 640,
+						slidesPerView: 2,
+					},
+					// when window width is >= 768px
+					768: {
+						width: 768,
+						slidesPerView: 2,
+					},
+					// when window width is >= 768px
+					1024: {
+						width: 1024,
+						slidesPerView: 3,
+					},
+				}}
+				slidesPerView={3}
+				// navigation
+				pagination={{ clickable: true }}
+				scrollbar={{ draggable: true }}
+				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log('slide change')}
+			>
+				{data.map((item, i) => {
+					return (
+						<SwiperSlide>
+							<div key={i} className='tutorCard'>
+								<img src={item.img} alt={item.title} />
+								<div className='cardBody'>
+									<div className='cardTitle'>{item.title}</div>
+									<div className='cardDesc'>{item.text}</div>
+									<div className='cardFooter'>
+										Read More <span>&gt;</span>
+									</div>
+								</div>
+							</div>
+						</SwiperSlide>
+					);
+				})}
+				...
+			</Swiper>
+			{/* {data.map((item, i) => {
+				return (
+					<div key={i} className='tutorCard'>
+						<img src={item.img} alt={item.title} />
+						<div className='cardBody'>
+							<div className='cardTitle'>{item.title}</div>
+							<div className='cardDesc'>{item.text}</div>
+							<div className='cardFooter'>
+								Read More <span>&gt;</span>
+							</div>
+						</div>
+					</div>
+				);
+			})} */}
+			{/* 			
 			<div className='tutorCard'>
 				<img src={figma} alt='figma' />
 				<div className='cardBody'>
@@ -55,7 +124,7 @@ const TutoringHero = () => {
 						Read More <span>&gt;</span>
 					</div>
 				</div>
-			</div>
+			</div> */}
 
 			{/* <Swiper
 				// install Swiper modules

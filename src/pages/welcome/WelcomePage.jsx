@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Lottie from 'lottie-react';
 import './Welcome.css';
 import animationData from '../../lottie/106433-bird-flock-test (1).json';
