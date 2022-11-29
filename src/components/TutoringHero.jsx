@@ -51,6 +51,11 @@ const TutoringHero = () => {
 				// loop={true}
 				autoplay={{ delay: 3000, disableOnInteraction: true }}
 				breakpoints={{
+					// when window width is >= 0px
+					320: {
+						width: 320,
+						slidesPerView: 1,
+					},
 					// when window width is >= 425px
 					425: {
 						width: 425,
@@ -66,13 +71,12 @@ const TutoringHero = () => {
 						width: 768,
 						slidesPerView: 2,
 					},
-					// when window width is >= 768px
+					// when window width is >= 1024px
 					1024: {
 						width: 1024,
 						slidesPerView: 3,
 					},
 				}}
-				slidesPerView={3}
 				// navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
@@ -82,8 +86,10 @@ const TutoringHero = () => {
 				{data.map((item, i) => {
 					return (
 						<SwiperSlide>
-							<div key={i} className='tutorCard'>
-								<img src={item.img} alt={item.title} />
+							<div key={i + 1} className='tutorCard'>
+								<img className='img-tutor' src={item.img} alt={item.title} />
+								<div className='img-pill'>{item.time}</div>
+								<div className='img-container'></div>
 								<div className='cardBody'>
 									<div className='cardTitle'>{item.title}</div>
 									<div className='cardDesc'>{item.text}</div>
@@ -95,7 +101,6 @@ const TutoringHero = () => {
 						</SwiperSlide>
 					);
 				})}
-				...
 			</Swiper>
 			{/* {data.map((item, i) => {
 				return (
