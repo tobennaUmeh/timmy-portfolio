@@ -174,7 +174,7 @@ const DesignBody = () => {
 	];
 	return (
 		<div className='designBody'>
-			{data.map((item) => {
+			{data.map((item, i) => {
 				return (
 					<div
 						key={item.header}

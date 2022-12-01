@@ -141,6 +141,10 @@
 	grid-row-end: 2;
 } */
 
+.designBody-Body:hover {
+	transform: scale(1.02);
+}
+
 .designBody-body--body[data-orientation='vertical'] {
 	display: grid;
 }
