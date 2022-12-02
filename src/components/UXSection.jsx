@@ -29,12 +29,12 @@ const UXSection = () => {
 	];
 	return (
 		<div id='uxsection' className='uxsect'>
-			{data.map((list) => {
+			{data.map((stack) => {
 				return (
-					<div key={list.header} className='ux'>
-						<div className='uxHeader'>{list.header}</div>
+					<div key={stack.header} className='ux'>
+						<div className='uxHeader'>{stack.header}</div>
 						<ul>
-							{list.list.map((el) => {
+							{stack.list.map((el) => {
 								return <li key={el} className='list-el'>{el}</li>;
 							})}
 						</ul>

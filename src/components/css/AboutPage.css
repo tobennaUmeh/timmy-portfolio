@@ -21,6 +21,12 @@ section#abt {
 	color: #d8cfcf;
 	font-size: 0.9rem;
 	background-color: #262626;
+	transition: all 0.2s ease-in-out;
+}
+
+.abt-btn:hover {
+	background-color: #d8cfcf;
+	color: #262626;
 }
 
 .abtHero {

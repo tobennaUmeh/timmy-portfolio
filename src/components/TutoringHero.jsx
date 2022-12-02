@@ -49,7 +49,11 @@ const TutoringHero = () => {
 				modules={[Mousewheel, Autoplay, Pagination, Scrollbar, A11y]}
 				spaceBetween={1}
 				// loop={true}
-				autoplay={{ delay: 3000, disableOnInteraction: true }}
+				autoplay={{
+					delay: 3000,
+					disableOnInteraction: false,
+					pauseOnMouseEnter: true,
+				}}
 				breakpoints={{
 					// when window width is >= 0px
 					320: {
@@ -80,25 +84,26 @@ const TutoringHero = () => {
 				// navigation
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
-				onSwiper={(swiper) => console.log(swiper)}
-				onSlideChange={() => console.log('slide change')}
+				// mousewheel={true}
 			>
 				{data.map((item, i) => {
 					return (
-						<SwiperSlide>
-							<div key={i + 1} className='tutorCard'>
-								<img className='img-tutor' src={item.img} alt={item.title} />
-								<div className='img-pill'>{item.time}</div>
-								<div className='img-container'></div>
-								<div className='cardBody'>
-									<div className='cardTitle'>{item.title}</div>
-									<div className='cardDesc'>{item.text}</div>
-									<div className='cardFooter'>
-										Read More <span>&gt;</span>
+						<div key={item.title}>
+							<SwiperSlide>
+								<div className='tutorCard'>
+									<img className='img-tutor' src={item.img} alt={item.title} />
+									<div className='img-pill'>{item.time}</div>
+									<div className='img-container'></div>
+									<div className='cardBody'>
+										<div className='cardTitle'>{item.title}</div>
+										<div className='cardDesc'>{item.text}</div>
+										<div className='cardFooter'>
+											Read More <span>&gt;</span>
+										</div>
 									</div>
 								</div>
-							</div>
-						</SwiperSlide>
+							</SwiperSlide>
+						</div>
 					);
 				})}
 			</Swiper>
