@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/timmy-portfolio/static/css/main.e7c3edf4.css",
-    "main.js": "/timmy-portfolio/static/js/main.c4867610.js",
+    "main.css": "/timmy-portfolio/static/css/main.57474f2c.css",
+    "main.js": "/timmy-portfolio/static/js/main.dce7e221.js",
     "static/media/dreamyNight.png": "/timmy-portfolio/static/media/dreamyNight.ab922888b71be286b2a3.png",
+    "static/media/neon.png": "/timmy-portfolio/static/media/neon.8bb794f3e43c72b12dbc.png",
     "static/media/BirBur.png": "/timmy-portfolio/static/media/BirBur.f93df4b5837b1613f00d.png",
     "static/media/mandilas.png": "/timmy-portfolio/static/media/mandilas.6b6c61663b85f530b78f.png",
     "static/media/Jenny Sue.png": "/timmy-portfolio/static/media/Jenny Sue.7870f15c8d04964315dd.png",
@@ -47,11 +48,11 @@
     "index.html": "/timmy-portfolio/index.html",
     "static/media/Linkedinsvg.svg": "/timmy-portfolio/static/media/Linkedinsvg.e59fc309435db4d4d49ab13f1d433d04.svg",
     "static/media/linkedin.svg": "/timmy-portfolio/static/media/linkedin.b36a49003fed3e09395ae435ba9a728a.svg",
-    "main.e7c3edf4.css.map": "/timmy-portfolio/static/css/main.e7c3edf4.css.map",
-    "main.c4867610.js.map": "/timmy-portfolio/static/js/main.c4867610.js.map"
+    "main.57474f2c.css.map": "/timmy-portfolio/static/css/main.57474f2c.css.map",
+    "main.dce7e221.js.map": "/timmy-portfolio/static/js/main.dce7e221.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7c3edf4.css",
-    "static/js/main.c4867610.js"
+    "static/css/main.57474f2c.css",
+    "static/js/main.dce7e221.js"
   ]
 }
