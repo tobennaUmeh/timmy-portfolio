@@ -4,6 +4,7 @@ import Footer from '../../components/Footer';
 import TutoringHero from '../../components/TutoringHero';
 import Students from '../../components/Students';
 import TutoringCards from '../../components/TutoringCards';
+import TuturingHail from '../../components/TuturingHail';
 
 const TutoringPage = () => {
 	return (
@@ -12,6 +13,7 @@ const TutoringPage = () => {
 			<TutoringHero />
 			<Students />
 			<TutoringCards />
+			<TuturingHail />
 			<Footer />
 		</>
 	);

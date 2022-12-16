@@ -149,6 +149,10 @@
 	display: grid;
 }
 
+.designBody-body--body[data-orientation='vertical'] .designBody-card {
+	padding-left: 0;
+}
+
 .designBody-body--body[data-orientation='vertical'] > .designBody-body--svg {
 	grid-column-start: 1;
 	grid-column-end: 4;
@@ -294,5 +298,8 @@
 	.designHero-body--svg {
 		margin-top: 0;
 	}
-
 } /* DesignBody end  */
+
+.designHero-card-text {
+	font-family: 'Product sans';
+}

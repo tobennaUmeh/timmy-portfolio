@@ -600,6 +600,8 @@ section#coreSkills {
 	border-radius: 6px;
 	margin-bottom: 5rem;
 	font-size: 1.2rem;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
 }
 
 /* footer */
@@ -644,4 +646,15 @@ section#coreSkills {
 	#footer {
 		display: block;
 	}
+}
+
+.textBody,
+.experiencetxt,
+.innovate-body {
+	font-family: 'Product sans';
+}
+
+.innovate--button:hover {
+	background-color: #262626;
+	color: white;
 }
