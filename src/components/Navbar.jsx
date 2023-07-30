@@ -11,8 +11,8 @@ import hamburger from '../Assets/hamburger.svg';
 
 const Navbar = () => {
 	const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	};
 	const btnRef = useRef();
 	const handleBtn = () => {
 		return btnRef.current.classList.toggle('collapse');
@@ -50,11 +50,7 @@ const Navbar = () => {
 		<nav>
 			<div className='navSmall'>
 				<NavLink onClick={scrollTop} to='/home'>
-					<img
-						src={navIcon}
-						className='navbarBrand'
-						alt='Icon'
-					/>
+					<img src={navIcon} className='navbarBrand' alt='Icon' />
 				</NavLink>
 			</div>
 			<img
@@ -67,10 +63,9 @@ const Navbar = () => {
 				<ul ref={btnRef} className='nav-Links collapse'>
 					{navEl.map((El) => (
 						<li className='nav-link' key={El.text}>
-							<NavLink onClick={scrollTop}
-								style={({ isActive }) =>
-									isActive ? active : normal
-								}
+							<NavLink
+								onClick={scrollTop}
+								style={({ isActive }) => (isActive ? active : normal)}
 								to={El.link}
 							>
 								{El.text}
@@ -81,12 +76,7 @@ const Navbar = () => {
 			</div>
 			<div className='navIcons'>
 				{icons.map((icon) => (
-					<img
-						className='icon'
-						key={icon.key}
-						src={icon.icon}
-						alt='icon'
-					/>
+					<img className='icon' key={icon.key} src={icon.icon} alt='icon' />
 				))}
 			</div>
 		</nav>
